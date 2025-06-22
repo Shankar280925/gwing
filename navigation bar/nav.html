@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="nav.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">TATA</div>
+
+    <img src="https://img.icons8.com/ios-filled/50/000000/menu--v1.png" 
+    class="hamburger" onclick="toggleMenu()" alt="Menu Icon" />
+
+    
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+  </header>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
